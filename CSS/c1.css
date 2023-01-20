@@ -1,0 +1,211 @@
+div.about-section{
+    /*padding: 0 10%;*/
+    /*margin-top: 215px;*/
+}
+/*div.words{*/
+/*    float: left;*/
+/*    width: 50%;*/
+/*    padding: 0 5%;*/
+/*}*/
+
+/*div.words.ved{*/
+/*    border: red 1px solid;*/
+/*    border-radius: 25px;*/
+/*}*/
+/*div.words.info{*/
+/*    border: red 1px solid;*/
+/*    background-color: #86b7fe;*/
+/*    border-radius: 25px;*/
+/*}*/
+.about-section{
+    background: url("../img/A dentist.jpg");
+    background-size: cover;
+    height: 1000px;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 120px 0;
+    /*height: calc(100vh);*/
+}
+.inner-container{
+width: 35%;
+    float: right;
+    margin: -100px 20px;
+    background-color: #fdfdfd;
+    padding: 15px;
+    border-radius: 30px;
+    /*border-top-left-radius: 30px;*/
+    /*border-bottom-left-radius: 25px;*/
+    box-shadow: -3px 5px 5px 2px #5c636a;
+
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.borders{
+    height: 4px;
+    width: 140px;
+    background-color: #86b7fe;
+}
+.text{
+    font-size: 17px;
+    color: #545454;
+    line-height: 30px;
+    text-align: left;
+}
+@media screen and (max-width: 1200px){
+.inner-container{
+    padding: 80px;
+}
+}
+@media screen and (max-width: 1400px){
+    .about-section{
+        background-size: 100%;
+
+    }
+    .inner-container{
+        /*float: right;*/
+    }
+}
+@media screen and (max-width: 1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 50px 50px;
+        margin: 50px 0px;
+    }
+    .inner-container{
+        width: 100%;
+        margin: 0 0 ;
+        border-radius: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .about-section{
+        padding: 0;
+        background-size: 100%;
+    }
+}
+@media screen and (max-width:1100px){
+    .maintk{
+        display: none;
+    }
+}
+/**/
+.team-section{
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 70px 15px 30px;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-section .section-title{
+
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+}
+.team-section .section-title h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    /*color: #ffffff;*/
+    color: #2c3e50;
+    font-weight: 700;
+
+}
+.team-section .team-item{
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.team-section .team-item .item{
+    flex-basis: calc(25% - 30px);
+    max-width: calc(25% - 30px);
+    transition: all .5s ease;
+    margin-bottom: 40px;
+}
+.team-section .team-item .item img{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+.team-section .team-item .item .innerpic{
+    position: relative;
+    z-index: 11;
+    padding: 0px 15px;
+}
+.team-section .team-item .item .innerpic .infopic{
+    background-color: #00cccc;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 8px;
+    transition: all .5s ease;
+    margin-top:-40px;
+
+}
+.team-section .team-item .item:hover .infopic{
+    transform: translateY(-20px);
+}
+.team-section .team-item .item:hover{
+    transform: translateY(-20px);
+}
+.team-section .team-item .item .innerpic .infopic h5{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.team-section .team-item .item .innerpic .infopic p{
+font-size: 16px;
+    font-weight: 400;
+    color: #2c3e50;
+    margin: 10px 0 0;
+}
+.team-section .team-item .item .innerpic .infopic .social-medea{
+    padding-top: 15px;
+}
+.team-section .team-item .item .innerpic .infopic .social-medea a{
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    border-radius: 50%;
+    margin: 0 2px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 16px;
+    transition: all .5s ease;
+}
+/*009688*/
+team-section .team-item .item .innerpic .infopic .social-medea a:hover{
+    box-shadow: 0 0 10px #000000;
+}
+
+@media (max-width: 991px){
+    .team-section .team-item .item{
+        flex-basis: calc(50%- 30px);
+        max-width: calc(50% - 30px);
+    }
+
+}
+@media (max-width: 767px){
+    .team-section .team-item .item{
+        flex-basis: calc(100%);
+        max-width: calc(100%);
+    }
+
+}
